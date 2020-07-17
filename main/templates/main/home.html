@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+{% block content %}
+{% if not user.is_authenticated %}
+<form class="login100-form validate-form">
+	<span class="login100-form-title p-b-43">
+		Login to continue
+	</span>
+
+
+	<div class="container-login100-form-btn">
+		<a class="login100-form-btn" href="/login">
+			Login
+		</a>
+	</div>
+
+	<div class="text-center p-t-46 p-b-20">
+		<span class="txt2">
+			or sign up using
+		</span>
+	</div>
+
+	<div class="login100-form-social flex-c-m">
+		<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+			<i class="fa fa-vk" aria-hidden="true"></i>
+		</a>
+	</div>
+</form>
+  {% else %}
+  <form class="login100-form validate-form">
+  <span class="login100-form-title p-b-43">
+    Welcome {{user.username}}!
+    </span>
+    <div class="container-login100-form-btn">
+  		<a class="login100-form-btn" href="/logout">
+  			Logout
+  		</a>
+  	</div>
+    </form>
+  {% endif %}
+{% endblock %}
