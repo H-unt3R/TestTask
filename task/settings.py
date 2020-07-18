@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'social_django',
+    'vk_api',
     'register.apps.RegisterConfig',
     'main.apps.MainConfig',
 ]
