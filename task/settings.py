@@ -25,7 +25,7 @@ SECRET_KEY = '(q_znd*p&+axklynlb@0y!k#wus56r)q_jd1%jtcc$1dht3#ko'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['hunt33r.pythonanywhere.com']
 
 
 # Application definition
